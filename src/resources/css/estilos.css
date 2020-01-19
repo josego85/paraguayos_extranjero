@@ -1,0 +1,15 @@
+#map-container {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+ * Header index.html
+ */
+.header {
+    color: black;
+    text-align: center;
+    font-size: 20pt;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
