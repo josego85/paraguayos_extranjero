@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juan Ayala",
+        "sex": "Masculino",
+        "work": "Prueba1",
+        "area": "Informática",
+        "linkedIn": "www.prueba1.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.9917071,
+          41.0666922
+        ]
+      }
+    }
+  ]
+}
