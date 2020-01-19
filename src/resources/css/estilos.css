@@ -3,13 +3,9 @@
     width: 100%;
 }
 
-/*
- * Header index.html
- */
-.header {
+.map-header {
     color: black;
     text-align: center;
     font-size: 20pt;
-    padding-top: 15px;
     padding-bottom: 10px;
 }

@@ -1,27 +1,71 @@
 <html>
 <head>
-    <title>Paraguayos en el Extranjero</title>
     <meta charset="utf-8" />
     <link rel="SHORTCUT ICON" href="resources/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Estilos -->
+    <title>Paraguayos en el Extranjero</title>
+
     <link rel="stylesheet" href="libs/leaflet/leaflet.css" charset="utf-8" />
     <link rel="stylesheet" href="libs/leaflet/plugins/Leaflet.fullscreen/leaflet.fullscreen.css" charset="utf-8" />
+    <link rel="stylesheet" href="libs/bootstrap-4.4.1-dist/css/bootstrap.min.css" media="screen" charset="utf-8" />
     <link rel="stylesheet" href="resources/css/estilos.css" charset="utf-8" />
 
-    <!-- Archivos JS -->
     <script src="libs/leaflet/leaflet.js" type="text/javascript" charset="utf-8"></script>
     <script src="libs/leaflet/plugins/Leaflet.fullscreen/Leaflet.fullscreen.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="libs/leaflet/plugins/Tile.Stamen/tile.stamen.js" type="text/javascript" charset="utf-8"></script>
     <script src="libs/jquery/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="resources/js/mapaOSM.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body onLoad="loadMap()">
-    <div class="header">
-        Paraguayos en el Extranjero
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#map">Mapa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+        <h1 class="display-3">Paraguayos en el extranjero!</h1>
+        <p class="lead">
+            Sitio para visualizar a todos los Paraguayos que viven y trabajan en el extranjero.
+        </p>
+    </header>
+    <div id="map">
+        <div class="map-header">Mapa</div>
+        <div id='map-container' style="height: 400px; border: 1px solid #AAA;"></divdiv>
     </div>
-    <div id='map-container' style="height: 400px; border: 1px solid #AAA;"></div>
+    
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Proyectos Beta 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
 </body>
 </html>
