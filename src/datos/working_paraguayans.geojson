@@ -6,15 +6,34 @@
       "properties": {
         "name": "Juan Ayala",
         "sex": "Masculino",
-        "work": "Prueba1",
+        "work": "Google Inc.",
         "area": "Informática",
-        "linkedIn": "www.prueba1.com"
+        "modo": "Presencial",
+        "linkedIn": "www.juanayala.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -107.9917071,
           41.0666922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ana Ramos",
+        "sex": "Femenino",
+        "work": "Enterprise Venture",
+        "area": "Informática",
+        "modo": "remoto",
+        "linkedIn": "www.anaramos.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.755,
+          -24.7761086
         ]
       }
     }
