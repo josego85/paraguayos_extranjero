@@ -1,5 +1,5 @@
-# paraguayos_extranjero
-Es un sitio donde muestra todos los paraguayos que trabajan en el extranjero
+# paraguayos
+Sitio para visualizar a todos los Paraguayos que trabajan en el territorio nacional o extranjero en cuanto a áreas de la tecnología de forma remota o presencial. 
 
 ## Screenshots
 
@@ -17,3 +17,9 @@ Tecnologías utilizadas:
 - CSS
 - HTML
 - Datos OSM
+
+Todo list:
+- API para consumir los datos.
+- Buscador
+- Formulario de carga
+- Gráficos
