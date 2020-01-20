@@ -62,9 +62,13 @@ function loadMap()
                     icon: icon
                 });
 			}
-		}).addTo(map);
+        });
+        // Add makers cluster.
+        var cluster_markers = L.markerClusterGroup();
+        cluster_markers.addLayer(layer_working_paraguayans);
+        map.addLayer(cluster_markers);
     });
-    
+
     // To capitalize.
     const capitalize = (s) => {
         if (typeof s !== 'string')
