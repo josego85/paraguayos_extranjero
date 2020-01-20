@@ -88,7 +88,7 @@ function loadMap()
                 var v = p_feature.properties[k];
             
                 // If the property is LinkedIn.
-                if (k === 'linkedIn'){
+                if (k === 'linkedin'){
                     // And if the value is a link.
                     if ((v[0] === 'w' & v[1] === 'w' & v[2] === 'w') ||
                       (v[0] === 'h' & v[1] === 't' & v[2] === 't' & v[3] === 'p'))
