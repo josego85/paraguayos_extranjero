@@ -7,6 +7,8 @@ Sitio para visualizar a todos los Paraguayos que trabajan en el territorio nacio
 
 ![Screenshot](screenshots/map.png)
 
+![Screenshot](screenshots/map1.png)
+
 ![Screenshot](screenshots/fullscreen_map.png)
 
 Levantar en sitio en cualquier server (Apache, etc.)
