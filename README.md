@@ -20,6 +20,6 @@ Tecnologías utilizadas:
 
 Todo list:
 - API para consumir los datos.
-- Buscador
-- Formulario de carga
-- Gráficos
+- Buscador.
+- Formulario de carga.
+- Gráficos.
