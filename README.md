@@ -26,5 +26,5 @@ Todo list:
 - API para consumir los datos.
 - Buscador.
 - Formulario de carga.
-- ~~Visualizaciones.
+- ~~Visualizaciones.~~
 - Versión móvil para Android.
