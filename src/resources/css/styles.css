@@ -1,11 +1,12 @@
-#map-container {
-    height: 100%;
-    width: 100%;
-}
-
 .map-header {
     color: black;
     text-align: center;
     font-size: 20pt;
     padding-bottom: 10px;
+}
+
+#map-container {
+    height: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
 }
