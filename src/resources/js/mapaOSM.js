@@ -65,36 +65,47 @@ function loadMap()
 		}).addTo(map);
     });
     
-    // To capitalize
+    // To capitalize.
     const capitalize = (s) => {
-        if (typeof s !== 'string') return ''
-        return s.charAt(0).toUpperCase() + s.slice(1)
+        if (typeof s !== 'string')
+        {
+            return '';
+        }
+        return s.charAt(0).toUpperCase() + s.slice(1);
     }
 
 	// Show information in a popup.
 	function onEachFeature(p_feature, p_layer) {
 		if (p_feature.properties) {
             var v_popupString = '<div class="popup">';
-            for (var k in p_feature.properties) {
+
+            for (var k in p_feature.properties)
+            {
                 var v = p_feature.properties[k];
-                // If the property is LinkedIn
+            
+                // If the property is LinkedIn.
                 if (k === 'linkedIn'){
-                    // And if the value is a link
-                    if ((v[0] === 'w' & v[1] === 'w' & v[2] === 'w') || (v[0] === 'h' & v[1] === 't' & v[2] === 't' & v[3] === 'p')) {
-                        // Put the link
-                        v_popupString += `<b> ${capitalize(k)} </b>: <a href="${v}">${v}</a><br />`;
-                    } else {
-                        // Else put a string
+                    // And if the value is a link.
+                    if ((v[0] === 'w' & v[1] === 'w' & v[2] === 'w') ||
+                      (v[0] === 'h' & v[1] === 't' & v[2] === 't' & v[3] === 'p'))
+                    {
+                        // Put the link.
+                        v_popupString += `<b> ${capitalize(k)} </b>: <a href="${v}" target="_blank">${v}</a><br />`;
+                    }
+                    else
+                    {
+                        // Else put a string.
                         v_popupString += '<b>' + capitalize(k) + '</b>: ' + v + '<br />';
                     }
-                } else {
-                    // Else put a string
+                }
+                else
+                {
+                    // Else put a string.
                     v_popupString += '<b>' + capitalize(k) + '</b>: ' + v + '<br />';
                 }
             }
             v_popupString += '</div>';
             p_layer.bindPopup(v_popupString);
         }
-
 	}
 }
