@@ -23,3 +23,4 @@ Todo list:
 - Buscador.
 - Formulario de carga.
 - Gráficos.
+- Versión móvil para Android.
