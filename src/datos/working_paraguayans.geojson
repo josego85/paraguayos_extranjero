@@ -8,7 +8,7 @@
         "sex": "Masculino",
         "work": "Google Inc.",
         "area": "Informática",
-        "modo": "Presencial",
+        "mode": "Presencial",
         "linkedIn": "www.juanayala.com"
       },
       "geometry": {
@@ -26,7 +26,7 @@
         "sex": "Femenino",
         "work": "Enterprise Venture",
         "area": "Informática",
-        "modo": "remoto",
+        "mode": "Remoto",
         "linkedIn": "www.anaramos.com"
       },
       "geometry": {
