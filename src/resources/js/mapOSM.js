@@ -63,7 +63,7 @@ function loadMap()
                 var sex = feature.properties.sex;
                 var icon = (feature.properties.sex === "Femenino" ||
                   feature.properties.sex === "femenino")? iconFemale : iconMale;
-                  
+
                 return L.marker(latlng,
                 {
                     title: feature.properties.name, 
@@ -88,16 +88,19 @@ const capitalize = (s) => {
 }
 
 // Show information in a popup.
-function onEachFeature(p_feature, p_layer) {
-    if (p_feature.properties) {
+function onEachFeature(p_feature, p_layer)
+{
+    if (p_feature.properties)
+    {
         var v_popupString = '<div class="popup">';
 
         for (var k in p_feature.properties)
         {
             var v = p_feature.properties[k];
         
-            // If the property is LinkedIn.
-            if (k === 'linkedin'){
+            // If the property is linkedin.
+            if (k === 'linkedin')
+            {
                 // And if the value is a link.
                 if ((v[0] === 'w' & v[1] === 'w' & v[2] === 'w') ||
                   (v[0] === 'h' & v[1] === 't' & v[2] === 't' & v[3] === 'p'))
