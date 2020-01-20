@@ -39,16 +39,20 @@ function loadMap()
         }).addTo(map);
     });
 
-    var layer_working_paraguayans;
-    var icon = new L.Icon(
+    var urlIcon = L.Icon.Default.imagePath = "resources/img/";
+    var leafIcon = L.Icon.extend(
     {
-        iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-yellow.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41]
+        options:
+        {
+            iconSize: [32, 32],
+            iconAnchor: [32, 32],
+            popupAnchor: [-16, -28]
+        }
     });
+    var iconFemale = new leafIcon({iconUrl: urlIcon + 'female_user.png'});
+    var iconMale = new leafIcon({iconUrl: urlIcon + 'male_user.png'});
+    
+    var layer_working_paraguayans;
     $.getJSON("datos/working_paraguayans.geojson", function(data_working_paraguayans)
     {
         layer_working_paraguayans = L.geoJson(data_working_paraguayans,
@@ -56,6 +60,10 @@ function loadMap()
             onEachFeature: onEachFeature,
             pointToLayer: function(feature, latlng)
             {
+                var sex = feature.properties.sex;
+                var icon = (feature.properties.sex === "Femenino" ||
+                  feature.properties.sex === "femenino")? iconFemale : iconMale;
+                  
                 return L.marker(latlng,
                 {
                     title: feature.properties.name, 
