@@ -11,7 +11,7 @@ Sitio para visualizar a todos los Paraguayos que trabajan en el territorio nacio
 
 ![Screenshot](screenshots/fullscreen_map.png)
 
-![Screenshot](screenshots/visualization.png)
+![Screenshot](screenshots/stats.png)
 
 Levantar en sitio en cualquier server (Apache, etc.)
 [Sitio de ejemplo] (https://paraguayos.proyectosbeta.net/)
