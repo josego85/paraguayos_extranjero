@@ -21,6 +21,9 @@ function loadMap()
         }
     });
 
+    // Do not repeat the map.
+    map.setMaxBounds([[-90, -180], [90, 180]]);
+
     // Stamen Maps. Layer Toner.
     var layer = new L.StamenTileLayer("toner");
     map.addLayer(layer);
@@ -99,7 +102,7 @@ function onEachFeature(p_feature, p_layer)
             var v = p_feature.properties[k];
         
             // If the property is linkedin.
-            if (k === 'linkedin')
+            if (k === 'linkedin' || k === 'website')
             {
                 // And if the value is a link.
                 if ((v[0] === 'w' & v[1] === 'w' & v[2] === 'w') ||
