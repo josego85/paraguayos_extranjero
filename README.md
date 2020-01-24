@@ -14,7 +14,7 @@ Sitio para visualizar a todos los Paraguayos que trabajan en el territorio nacio
 ![Screenshot](screenshots/stats.png)
 
 Levantar en sitio en cualquier server (Apache, etc.)
-[Sitio de ejemplo] (https://paraguayos.proyectosbeta.net/)
+[Sitio de ejemplo] (http://paraguayos.proyectosbeta.net/)
 
 Tecnologías utilizadas:
 - JavaScript (Leaflet, JQuery, Boostrap)
