@@ -52,11 +52,17 @@ function loadMap()
             popupAnchor: [-16, -28]
         }
     });
-    var iconFemale = new leafIcon({iconUrl: urlIcon + 'female_user.png'});
-    var iconMale = new leafIcon({iconUrl: urlIcon + 'male_user.png'});
+    var iconFemale = new leafIcon(
+    {
+        iconUrl: urlIcon + 'female_user.png'
+    });
+    var iconMale = new leafIcon(
+    {
+        iconUrl: urlIcon + 'male_user.png'
+    });
     
     var layer_working_paraguayans;
-    $.getJSON("datos/working_paraguayans.geojson", function(data_working_paraguayans)
+    $.getJSON("http://api-paraguayos/api/paraguayans", function(data_working_paraguayans)
     {
         layer_working_paraguayans = L.geoJson(data_working_paraguayans,
         {
@@ -64,8 +70,8 @@ function loadMap()
             pointToLayer: function(feature, latlng)
             {
                 var sex = feature.properties.sex;
-                var icon = (feature.properties.sex === "Femenino" ||
-                  feature.properties.sex === "femenino")? iconFemale : iconMale;
+                var icon = (feature.properties.sex === "Female" ||
+                  feature.properties.sex === "female")? iconFemale : iconMale;
 
                 return L.marker(latlng,
                 {
@@ -105,7 +111,7 @@ function onEachFeature(p_feature, p_layer)
             if (k === 'linkedin' || k === 'website')
             {
                 // And if the value is a link.
-                if ((v[0] === 'w' & v[1] === 'w' & v[2] === 'w') ||
+                if (v != null && (v[0] === 'w' & v[1] === 'w' & v[2] === 'w') ||
                   (v[0] === 'h' & v[1] === 't' & v[2] === 't' & v[3] === 'p'))
                 {
                     // Put the link.

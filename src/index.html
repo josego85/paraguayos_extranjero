@@ -22,9 +22,11 @@
     <script src="libs/leaflet/plugins/Leaflet.markercluster/leaflet.markercluster.js" type="text/javascript" charset="utf-8"></script>
     <script src="libs/jquery/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="libs/bootstrap-4.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="resources/js/onLoadScripts.js" type="text/javascript" charset="utf-8"></script>
     <script src="resources/js/mapOSM.js" type="text/javascript" charset="utf-8"></script>
+    <script src="resources/js/stats.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body onLoad="loadMap()">
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -84,7 +86,7 @@
                     <div class="card h-100">
                         <img class="card-img-top" src="resources/img/work_remote.png" alt="Trabajo remoto">
                         <div class="card-body">
-                            <h4 class="card-title">2</h4>
+                            <h4 class="card-title statRemoteMode"></h4>
                             <p class="card-text">Trabajo remoto</p>
                         </div>
                     </div>
@@ -94,8 +96,8 @@
                     <div class="card h-100">
                         <img class="card-img-top" height="219px" src="resources/img/work_paraguay.png" alt="Trabajo en Paraguay">
                         <div class="card-body">
-                            <h4 class="card-title">4</h4>
-                            <p class="card-text">Trabajando en Paraguay</p>
+                            <h4 class="card-title statPresentialMode"></h4>
+                            <p class="card-text">Trabajo presencial</p>
                         </div>
                     </div>
                 </div>
@@ -104,8 +106,8 @@
                     <div class="card h-100">
                         <img class="card-img-top" src="resources/img/work_world.png" alt="Trabajando en el exterior">
                         <div class="card-body">
-                            <h4 class="card-title">0</h4>
-                            <p class="card-text">Trabajando en el exterior</p>
+                            <h4 class="card-title statPresentialRemoteMode"></h4>
+                            <p class="card-text">Trabajo presencial-remoto</p>
                         </div>
                     </div>
                 </div>
