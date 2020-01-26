@@ -23,7 +23,7 @@ Tecnologías utilizadas:
 - Datos OSM
 
 Todo list:
-- API para consumir los datos.
+- ~~VAPI para consumir los datos.~~V
 - Buscador.
 - Formulario de carga.
 - ~~Visualizaciones.~~
